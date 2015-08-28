@@ -18,7 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.title = @"imaladec.com";
+    
     [[UIApplication sharedApplication]setNetworkActivityIndicatorVisible:YES] ;
     
     NSURL *url = [NSURL URLWithString:@"https://itunes.apple.com/us/rss/topaudiobooks/limit=10/xml" ];

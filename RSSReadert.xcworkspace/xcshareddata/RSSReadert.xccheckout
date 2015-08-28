@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>90118460-3B56-426A-AC26-B7F2DD5CDB8D</string>
+	<key>IDESourceControlProjectName</key>
+	<string>RSSReadert</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>C1DFD4143306D182522779DDA0B24C569749C34D</key>
+		<string>https://github.com/Heymamaimdumb/RSSReadert.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>RSSReadert.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>C1DFD4143306D182522779DDA0B24C569749C34D</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/Heymamaimdumb/RSSReadert.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>C1DFD4143306D182522779DDA0B24C569749C34D</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>C1DFD4143306D182522779DDA0B24C569749C34D</string>
+			<key>IDESourceControlWCCName</key>
+			<string>RSSReadert</string>
+		</dict>
+	</array>
+</dict>
+</plist>
