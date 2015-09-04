@@ -16,6 +16,7 @@
 		86C3C1D11B8F02530092A82B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 86C3C1CF1B8F02530092A82B /* LaunchScreen.xib */; };
 		86C3C1DD1B8F02530092A82B /* RSSReadertTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 86C3C1DC1B8F02530092A82B /* RSSReadertTests.m */; };
 		86C3C1E81B8F038D0092A82B /* RSSMainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 86C3C1E71B8F038D0092A82B /* RSSMainVC.m */; };
+		86F152D91B99AAB00051DDCD /* DetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 86F152D81B99AAB00051DDCD /* DetailVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,8 @@
 		86C3C1DC1B8F02530092A82B /* RSSReadertTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSSReadertTests.m; sourceTree = "<group>"; };
 		86C3C1E61B8F038D0092A82B /* RSSMainVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSSMainVC.h; sourceTree = "<group>"; };
 		86C3C1E71B8F038D0092A82B /* RSSMainVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSSMainVC.m; sourceTree = "<group>"; };
+		86F152D71B99AAB00051DDCD /* DetailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailVC.h; sourceTree = "<group>"; };
+		86F152D81B99AAB00051DDCD /* DetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailVC.m; sourceTree = "<group>"; };
 		FE0A2B5E3048884697097809 /* Pods-RSSReadert.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RSSReadert.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RSSReadert/Pods-RSSReadert.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -96,6 +99,8 @@
 				86C3C1CD1B8F02530092A82B /* Images.xcassets */,
 				86C3C1E61B8F038D0092A82B /* RSSMainVC.h */,
 				86C3C1E71B8F038D0092A82B /* RSSMainVC.m */,
+				86F152D71B99AAB00051DDCD /* DetailVC.h */,
+				86F152D81B99AAB00051DDCD /* DetailVC.m */,
 				86C3C1CF1B8F02530092A82B /* LaunchScreen.xib */,
 				86C3C1C41B8F02530092A82B /* RSSReadert.xcdatamodeld */,
 				86C3C1BD1B8F02530092A82B /* Supporting Files */,
@@ -282,6 +287,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				86C3C1E81B8F038D0092A82B /* RSSMainVC.m in Sources */,
+				86F152D91B99AAB00051DDCD /* DetailVC.m in Sources */,
 				86C3C1C31B8F02530092A82B /* AppDelegate.m in Sources */,
 				86C3C1C61B8F02530092A82B /* RSSReadert.xcdatamodeld in Sources */,
 				86C3C1C01B8F02530092A82B /* main.m in Sources */,

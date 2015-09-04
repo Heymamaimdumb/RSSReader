@@ -8,6 +8,7 @@
 
 #import "RSSMainVC.h"
 #import "AFNetworking.h"
+#import "DetailVC.h"
 @interface RSSMainVC ()
 
 @end
@@ -21,7 +22,7 @@
     
     [[UIApplication sharedApplication]setNetworkActivityIndicatorVisible:YES] ;
     
-    NSURL *url = [NSURL URLWithString:@"https://itunes.apple.com/us/rss/topaudiobooks/limit=10/xml" ];
+    NSURL *url = [NSURL URLWithString:@"https://itunes.apple.com/us/rss/topfreeebooks/limit=10/xml" ];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
         NSURLConnection *connection = [[NSURLConnection alloc] initWithRequest:request delegate:self];
     if (connection) {
@@ -86,6 +87,7 @@
     {
         self.currentTitle = [NSMutableString string];
         self.pubDate = [NSMutableString string];
+        self.newsText = [NSMutableString string];
     
     }
 
@@ -101,12 +103,15 @@
         [_pubDate appendString:string];
     
     }
-    
+    else if ([_currentElement isEqualToString:@"summary"]) {
+        
+        [_newsText appendString:string];
+    }
 }
 
 -(void)parser:(NSXMLParser *)parser didEndElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName{
     if ([elementName isEqualToString:@"title"]) {
-        NSDictionary *newsItem = [NSDictionary dictionaryWithObjectsAndKeys:_currentTitle,@"title", _pubDate,@"releaseDate", nil];
+        NSDictionary *newsItem = [NSDictionary dictionaryWithObjectsAndKeys:_currentTitle,@"title", _pubDate,@"releaseDate", _newsText, @"newsText", nil];
         [_news addObject:newsItem];
        // self.currentTitle = nil;
       //  self.pubDate = nil;
@@ -159,6 +164,18 @@
 }
 
 
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    DetailVC *detail = [self.storyboard instantiateViewControllerWithIdentifier:@"detailVC"];
+    
+    NSDictionary *detailNews = [_news objectAtIndex:indexPath.row];
+    
+    detail.newsText = [detailNews objectForKey:@"title"];
+    detail.newsDate = [detailNews objectForKey:@"releaseDate"];
+    detail.newsDescription = [detailNews objectForKey:@"newsText"];
+    [self.navigationController pushViewController:detail animated:YES];
+
+}
 /*
 // Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {

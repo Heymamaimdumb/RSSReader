@@ -16,6 +16,7 @@
     NSString *_currentElement;
     NSMutableString *_currentTitle;
     NSMutableString *_pubDate;
+    NSMutableString *_newsText;
 }
 
 @property (nonatomic,retain) NSMutableData *rssData;
@@ -23,4 +24,5 @@
 @property (nonatomic,retain) NSMutableString *currentTitle;
 @property (nonatomic,retain) NSMutableString *pubDate;
 @property (nonatomic,retain) NSMutableArray *news;
+@property (nonatomic,retain) NSMutableString *newsText;
 @end
