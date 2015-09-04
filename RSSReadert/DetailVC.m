@@ -10,8 +10,7 @@
 
 @interface DetailVC ()
 
-@property (weak, nonatomic) IBOutlet UILabel *newsLable;
-
+@property (weak, nonatomic) IBOutlet UITextView *newsLable;
 
 @property (weak, nonatomic) IBOutlet UILabel *dateLable;
 
@@ -21,10 +20,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self.view addSubview:self.newsLable];
+    [self.newsLable setUserInteractionEnabled:YES];
+    [self.newsLable setScrollEnabled:YES];
+    self.newsLable.showsVerticalScrollIndicator = YES;
+    self.newsLable.scrollsToTop= YES;
+    self.newsLable.editable = NO;
     self.newsLable.text = self.newsDescription;
     self.navigationItem.title = self.newsText;
-    
     self.dateLable.text = self.newsDate;
+    
+    
     
 }
 
